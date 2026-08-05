@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Wong Jia Kai | Cybersecurity Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Set the theme before first paint so there's no flash of the wrong mode.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-text">
+            <span class="logo-name">Jia Kai. W</span>
+            <span class="logo-role">Cybersecurity</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="themeToggleHeader" class="theme-toggle" aria-label="Switch to light mode">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+          <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">☰</button>
+        </div>
+      </div>
+
+      <nav class="vertical" id="navVertical">
+        <a href="#about"><span class="icon">👤</span><span class="label">About</span></a>
+        <a href="#education"><span class="icon">🎓</span><span class="label">Education</span></a>
+        <a href="#projects"><span class="icon">🛠️</span><span class="label">Projects</span></a>
+        <a href="#experience"><span class="icon">💼</span><span class="label">Experience</span></a>
+        <a href="#skills"><span class="icon">⚙️</span><span class="label">Skills</span></a>
+        <a href="#certifications"><span class="icon">📜</span><span class="label">Certifications</span></a>
+        <a href="#resume"><span class="icon">📄</span><span class="label">Resume</span></a>
+        <a href="#contact"><span class="icon">✉️</span><span class="label">Contact</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="themeToggleFooter" class="theme-toggle theme-toggle--pill" aria-label="Switch to light mode">
+          <span class="theme-toggle-icon">🌙</span>
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+      </div>
+
+    </aside>
+
+    <main class="main" id="mainContent">
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hidden">
+          <p class="tag">Cybersecurity Portfolio</p>
+          <h1>Hi, I’m <span>Jia Kai. W</span></h1>
+          <p>Cybersecurity undergraduate with hands-on experience in intrusion detection systems, software testing, and technical analysis. Skilled in Python, SQL, Wireshark, and Nmap — seeking opportunities in SOC operations and cybersecurity analysis.</p>
+          <div class="btns">
+            <a href="#projects" class="btn primary">View My Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="terminal hidden terminal-margin">
+<pre>
+$ whoami
+Cybersecurity Analyst
+
+$ skills
+[+] IDS & Network Security
+[+] Python & SQL
+[+] Wireshark & Nmap
+[+] Vulnerability Assessment
+[+] SOC Monitoring
+
+$ status
+Ready to protect your organization.
+</pre>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="hidden">
+        <p class="tag">About Me</p>
+        <h2>Security‑minded and <span>career ready</span></h2>
+        <p>I am passionate about cybersecurity, threat detection, and reducing organizational risk. My interests include SOC operations, intrusion detection systems, log analysis, vulnerability scanning, and incident response.</p>
+        <p>I enjoy solving technical problems, investigating suspicious activity, and producing clear, actionable reports that help teams make better security decisions.</p>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="hidden">
+        <p class="tag">Education</p>
+        <h2>Academic Background</h2>
+
+        <div class="card card-margin">
+          <h3>Bachelor of Science in Cybersecurity</h3>
+          <p><strong>University of Wollongong, SIM</strong></p>
+          <p>Graduated: June 2026</p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="hidden">
+        <p class="tag">Projects</p>
+        <h2>Cybersecurity Projects & Home Labs</h2>
+
+        <div class="grid">
+
+          <div class="card hidden">
+            <span class="project-tag">IDS</span>
+            <h3>IntruSight – Web-Based Intrusion Detection Dashboard</h3>
+            <p>Developed a full‑stack IDS dashboard using React, FastAPI, and MongoDB, integrating Suricata, Snort, Zeek, and Kismet.</p>
+            <ul class="muted-list">
+              <li>Centralized multi‑source IDS alerts</li>
+              <li>Built monitoring & alert management features</li>
+              <li>Improved visibility into network threats</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="hidden">
+        <p class="tag">Experience</p>
+        <h2>Work Experience</h2>
+
+        <div class="card card-margin">
+          <h3>Software Analyst — United Overseas Bank (UOB)</h3>
+          <p>June 2022 – June 2023</p>
+          <ul class="muted-list">
+            <li>Investigated and prioritized software defects using JIRA</li>
+            <li>Collaborated with cross‑functional teams to analyze root causes</li>
+            <li>Conducted application testing and validation</li>
+            <li>Maintained detailed defect documentation and reporting</li>
+          </ul>
+        </div>
+
+        <div class="card card-margin">
+          <h3>Assistant Platoon Trainer — Singapore Armed Forces (ITI)</h3>
+          <p>February 2021 – May 2022</p>
+          <ul class="muted-list">
+            <li>Trained and supervised personnel</li>
+            <li>Enforced operational procedures and safety standards</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Software / Hardware Tester — Pactera</h3>
+          <p>September 2019 – January 2020</p>
+          <ul class="muted-list">
+            <li>Conducted software & hardware testing</li>
+            <li>Performed root cause analysis & validation testing</li>
+            <li>Collaborated with technical teams to resolve issues</li>
+            <li>Produced detailed technical documentation & test reports</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <p class="tag hidden">Skills</p>
+        <h2 class="hidden">Technical Skills</h2>
+
+        <div class="skill-tags hidden">
+          <div class="skill-group">
+            <h3>Programming & Databases</h3>
+            <div class="tag-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Network Security & Analysis</h3>
+            <div class="tag-list">
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Nmap</span>
+              <span class="skill-tag">Suricata</span>
+              <span class="skill-tag">Snort</span>
+              <span class="skill-tag">Zeek</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Testing & Analysis</h3>
+            <div class="tag-list">
+              <span class="skill-tag">UAT Testing</span>
+              <span class="skill-tag">JIRA</span>
+              <span class="skill-tag">Vulnerability Assessment</span>
+              <span class="skill-tag">SOC Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="hidden">
+        <p class="tag">Certifications</p>
+        <h2>Training & Certifications</h2>
+
+        <div class="cert-list">
+          <div class="cert-item"><strong>Google Cybersecurity Certificate</strong><span>Completed</span></div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="hidden">
+        <p class="tag">Resume</p>
+        <h2>My Resume</h2>
+
+        <div class="resume-toggle-text" id="resumeToggle">
+          ▶ Show Resume Preview
+        </div>
+
+        <div id="resumePreview" class="resume-preview">
+          <iframe 
+            src="JiaKaiResume_2026.pdf"
+            title="Resume Preview"
+            width="100%" 
+            height="800px">
+          </iframe>
+        </div>
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact-box hidden">
+          <p class="tag">Contact</p>
+          <h2>Get in Touch</h2>
+          <p>I’m open to SOC analyst roles, cybersecurity internships, and security engineering opportunities.</p>
+
+          <div class="contact-links">
+            <a href="mailto:wongjiakai@gmail.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/jiakaiwong" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="tel:+6592721939">Call Me</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© <span id="year"></span> Wong Jia Kai. Built with HTML, CSS, and JavaScript.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
